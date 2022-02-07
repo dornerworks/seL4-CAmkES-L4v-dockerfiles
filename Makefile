@@ -14,7 +14,7 @@ BASETOOLS_IMG ?= base_tools
 
 # Core images
 SEL4_IMG ?= sel4
-CAMKES_IMG ?= camkes
+CAMKES_IMG ?= camkes:2021_07_08
 L4V_IMG ?= l4v
 
 # Extra feature images
@@ -29,8 +29,8 @@ CAMKES_TST_IMG ?= camkes_test
 L4V_TST_IMG ?= l4v_test
 
 # Interactive images
-EXTRAS_IMG := extras
-USER_IMG := user_img-$(shell whoami)
+EXTRAS_IMG := extras:2021_07_08
+USER_IMG := user_img-$(shell whoami):2021_07_08
 USER_BASE_IMG := $(SEL4_IMG)
 HOST_DIR ?= $(shell pwd)
 
