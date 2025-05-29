@@ -20,4 +20,7 @@ RUN apt-get update -q \
     && apt-get install -y --no-install-recommends \
         # Add more dependencies here
         cowsay \
-        sudo
+        sudo \
+        zstd \
+        lz4 \
+        lzop
